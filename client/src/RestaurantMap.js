@@ -22,6 +22,7 @@ const RestaurantMap = () => {
       });
       setRestaurants(response.data);
       setFitBounds(true);  // Set to true to fit bounds after search
+      setPinPosition(null);
     } catch (error) {
       console.error('Error searching for restaurants:', error);
       alert('Failed to search for restaurants');
